@@ -97,4 +97,3 @@ min_order_value = merged_payment.payment_value.min()
 ```py
 max_order_value = order_payments_df.payment_value.max()
 ```
-## Le temps moyen d'une livraison par mois
