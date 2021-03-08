@@ -1,5 +1,5 @@
 # Requêtes pandas 
-- - - 
+
 ## import et préparation des variables
 
 ```py
