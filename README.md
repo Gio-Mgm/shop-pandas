@@ -14,7 +14,7 @@ order_payments_df = pd.read_csv("./dataset/olist_order_payments_dataset.csv")
 order_reviews_df  = pd.read_csv("./dataset/olist_order_reviews_dataset.csv")
 order_items_df    = pd.read_csv("./dataset/olist_order_items_dataset.csv")
 geolocation_df    = pd.read_csv("./dataset/olist_geolocation_dataset.csv")
-#category_df = pd.read_csv("./datasets/category.csv")
+#category_df      = pd.read_csv("./datasets/category.csv")
 ```
 
 ## Nombre de clients total
@@ -59,7 +59,7 @@ total_sellers_by_state = sellers_df.seller_state.value_counts()
 ## Durée moyenne entre la commande et la livraison
 ```py
 delivered = pd.to_datetime(orders_df.order_delivered_customer_date)
-purchase = pd.to_datetime(orders_df.order_purchase_timestamp)
+purchase  = pd.to_datetime(orders_df.order_purchase_timestamp)
 
 mean_time = (delivered - purchase).mean()
 ```
